@@ -1,0 +1,31 @@
+<%- include ("../../partials/header.ejs") -%>
+
+<body>
+  <div class="w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="card" style="width: 400px;">
+      <div class="card-header">
+        login de admin
+      </div>
+      <div class="card-body">
+        <form action="/authenticate" method="POST">
+          <input
+            class="form-control mb-2"
+            type="email"
+            name="email"
+            placeholder="email@exemplo.com"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="******"
+            class="form-control mb-2"
+          />
+          <button class="btn btn-success btn-block m-auto w-50" type="submit">
+            Logar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<%- include ("../../partials/footer.ejs") -%>

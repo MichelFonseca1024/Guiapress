@@ -1,0 +1,32 @@
+<%- include ("../../partials/header.ejs") -%>
+
+<body>
+  <%- include ("../../partials/navbar.ejs") -%>
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-header">
+        Novo usuário
+      </div>
+      <div class="card-body">
+        <form action="/users/create" method="POST">
+          <input
+            class="form-control mb-2"
+            type="email"
+            name="email"
+            placeholder="email@exemplo.com"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="******"
+            class="form-control mb-2"
+          />
+          <button class="btn btn-success btn-block m-auto w-50" type="submit">
+            Salvar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<%- include ("../../partials/footer.ejs") -%>
